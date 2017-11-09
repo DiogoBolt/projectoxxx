@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    //"outFile": "../../../public/js/app.js",
+    "outDir": "../../../public/js/",
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  }
+}
