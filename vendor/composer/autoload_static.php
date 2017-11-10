@@ -351,6 +351,7 @@ class ComposerStaticInit6d446404908e05301887119872d7c27a
 
     public static $classMap = array (
         'AddUsers' => __DIR__ . '/../..' . '/database/migrations/2017_11_09_154141_addUsers.php',
+        'Addfamilytoproducts' => __DIR__ . '/../..' . '/database/migrations/2017_11_10_121941_addfamilytoproducts.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',

@@ -21,7 +21,16 @@
             </a>
             <ul class="treeview-menu">
                 <li>
-                    <a href="/produtos"><i class="fa fa-dashboard"></i>Produtos</a>
+                    <a href="/families"><i class="fa fa-folder-open"></i>Families</a>
+                </li>
+                <li>
+                    <a href="/categories"><i class="fa fa-folder-open"></i>Categories</a>
+                </li>
+                <li>
+                    <a href="/brands"><i class="fa fa-folder-open"></i>Brands</a>
+                </li>
+                <li>
+                    <a href="/produtos"><i class="fa fa-folder-open"></i>Products</a>
                 </li>
             </ul>
         </li>

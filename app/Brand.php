@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Flight extends Model
+class Brand extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -21,7 +21,7 @@ class Flight extends Model
      */
 
 
-    protected $table = 'flights';
+    protected $table = 'brands';
 
     /**
      * The attributes that should be hidden for arrays.
