@@ -26,7 +26,7 @@ class DashboardController extends Controller
 
     public function categories()
     {
-        $categories = Category::all();
+        $categories = Category::with('family');
         return view('categories.index',compact('categories'));
     }
 

@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Category extends Model
+class Product extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -21,13 +21,8 @@ class Category extends Model
      */
 
 
-    protected $table = 'categories';
+    protected $table = 'products';
 
-
-    public function family()
-    {
-        return $this->belongsTo(Family::class,'family_id');
-    }
     /**
      * The attributes that should be hidden for arrays.
      *

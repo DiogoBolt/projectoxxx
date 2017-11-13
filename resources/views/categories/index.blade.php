@@ -30,17 +30,19 @@
                                 <table class="table no-margin">
                                     <thead>
                                     <tr>
-                                        <th>Category Id</th>
                                         <th>Name</th>
                                         <th>Family</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($categories as $category)
                                         <tr>
-                                            <td>{{$category->id}}</td>
                                             <td>{{$category->name}}</td>
-                                            <td>{{$category->family_id}}</td>
+                                            <td>{{$category->family->name}}</td>
+                                            <td><a class="btn btn-warning" href="/categories/edit/{{$category->id}}">Edit</a></td>
+                                            <td><a class="btn btn-danger" href="/categories/delete/{{$category->id}}" onclick="return confirm('Are you sure?')" >Delete</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>
@@ -50,7 +52,7 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer clearfix">
-                            <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Add New Category</a>
+                            <a href="/categories/new" class="btn btn-sm btn-info btn-flat pull-left">Add New Category</a>
                         </div>
                         <!-- /.box-footer -->
                     </div>
