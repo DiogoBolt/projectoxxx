@@ -16,6 +16,45 @@
 
                     @include('layouts.info')
 
+                    <div class="box box-info">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Families</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table class="table no-margin">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($families as $family)
+                                        <tr>
+                                            <td>{{$family->name}}</td>
+                                            <td><a class="btn btn-warning" href="/families/edit/{{$family->id}}">Edit</a></td>
+                                            <td><a class="btn btn-danger" href="/families/delete/{{$family->id}}" onclick="return confirm('Are you sure?')" >Delete</a></td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer clearfix">
+                            <a href="/families/new" class="btn btn-sm btn-info btn-flat pull-left">Add New Family</a>
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
+
                 </div>
             </div>
         </div>

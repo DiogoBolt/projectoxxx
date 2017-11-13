@@ -8,11 +8,9 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "doctrine/dbal": "~2.3",
-        "vinkla/gitlab": "^2.4",
         "box/spout": "^2.4",
         "laravelcollective/html": "^5.2",
-        "phpoffice/phpexcel": "^1.8.1",
-        "sahusoftcom/eloquent-image-mutator": "dev-master"
+        "phpoffice/phpexcel": "^1.8.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

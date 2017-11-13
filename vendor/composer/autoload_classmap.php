@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddUsers' => $baseDir . '/database/migrations/2017_11_09_154141_addUsers.php',
     'Addfamilytoproducts' => $baseDir . '/database/migrations/2017_11_10_121941_addfamilytoproducts.php',
+    'Addproducts' => $baseDir . '/database/migrations/2017_11_13_095335_addproducts.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',

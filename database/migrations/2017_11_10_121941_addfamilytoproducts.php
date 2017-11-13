@@ -22,8 +22,6 @@ class Addfamilytoproducts extends Migration
         Schema::create('families', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('password');
-            $table->string('remember_token');
             $table->timestamps();
 
         });
