@@ -16,6 +16,44 @@
 
                     @include('layouts.info')
 
+                    <div class="box box-info">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Brands</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table class="table no-margin">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($brands as $brand)
+                                        <tr>
+                                            <td>{{$brand->name}}</td>
+                                            <td><a class="btn btn-warning" href="/brands/edit/{{$brand->id}}">Edit</a></td>
+                                            <td><a class="btn btn-danger" href="/brands/delete/{{$brand->id}}" onclick="return confirm('Are you sure?')" >Delete</a></td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer clearfix">
+                            <a href="/brands/new" class="btn btn-sm btn-info btn-flat pull-left">Add New Brand</a>
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
                 </div>
             </div>
         </div>

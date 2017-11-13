@@ -19,7 +19,21 @@ route::group(['middleware'=>'auth'],function() {
     Route::post('/categories/postedit/{id}','CategoryController@postEditCategory');
     Route::get('/categories/delete/{id}','CategoryController@deleteCategory');
 
-    Route::any('/brands','DashboardController@brands');
+    //Brands
+    Route::get('/brands','BrandController@index');
+    Route::get('/brands/new','BrandController@newBrand');
+    Route::post('/brands/create','BrandController@createBrand');
+    Route::get('/brands/edit/{id}','BrandController@editBrand');
+    Route::post('/brands/postedit/{id}','BrandController@postEditBrand');
+    Route::get('/brands/delete/{id}','BrandController@deleteBrand');
+
+    //Products
+
+    //Orders
+
+    //Promotions
+
+
 
 
 });

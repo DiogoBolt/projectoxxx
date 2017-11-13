@@ -54,7 +54,12 @@
                 <i class="fa fa-folder"></i> <span>Brands</span> <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-
+                <li>
+                    <a href="/brands"><i class="fa fa-folder-open"></i>Brands</a>
+                </li>
+                <li>
+                    <a href="/brands/new"><i class="fa fa-folder-open"></i>New Brand</a>
+                </li>
             </ul>
         </li>
         <li>
