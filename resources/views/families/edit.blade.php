@@ -16,6 +16,25 @@
 
                     @include('layouts.info')
 
+                    <div class="box box-warning">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Edit {{$family->name}}</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <form action="/families/postedit/{{$family->id}}" method="POST">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control" name="name" value="{{$family->name}}">
+                                </div>
+                                <button class="btn btn-warning" type="submit">Edit</button>
+                            </form>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
                 </div>
             </div>
         </div>

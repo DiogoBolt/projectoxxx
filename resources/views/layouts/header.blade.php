@@ -1,18 +1,6 @@
-<?php
-use App\Lib\Permissions;
-?>
-<style>
-    .not{
-        background-color:#ccffcc;
-    }
-    .not.hover{
-        background-color: #aaffaa;
-    }
-</style>
+
 <div class="navbar-custom-menu">
     <ul class="nav navbar-nav">
-        <!-- Apoio Cliente -->
-
         <li title="Orders" class="messages-menu">
             <a href="/">
                 <i class="fa fa-credit-card"></i>

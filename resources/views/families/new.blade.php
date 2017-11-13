@@ -16,6 +16,25 @@
 
                     @include('layouts.info')
 
+                    <div class="box box-warning">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Add new Family</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <form action="/families/create" method="POST">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control" placeholder="Enter ..." name="name">
+                                </div>
+                                <button class="btn btn-success" type="submit">Create</button>
+                            </form>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
                 </div>
             </div>
         </div>
