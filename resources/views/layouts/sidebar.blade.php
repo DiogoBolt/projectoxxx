@@ -20,18 +20,49 @@
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-folder"></i> <span>Families</span> <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
                 <li>
                     <a href="/families"><i class="fa fa-folder-open"></i>Families</a>
                 </li>
                 <li>
+                    <a href="/families/new"><i class="fa fa-folder-open"></i>New Family</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-folder"></i> <span>Categories</span> <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li>
                     <a href="/categories"><i class="fa fa-folder-open"></i>Categories</a>
                 </li>
                 <li>
-                    <a href="/brands"><i class="fa fa-folder-open"></i>Brands</a>
+                    <a href="/categories/new"><i class="fa fa-folder-open"></i>New Category</a>
                 </li>
-                <li>
-                    <a href="/produtos"><i class="fa fa-folder-open"></i>Products</a>
-                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-folder"></i> <span>Brands</span> <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-folder"></i> <span>Products</span> <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+
             </ul>
         </li>
 
