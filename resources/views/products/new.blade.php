@@ -26,16 +26,21 @@
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <!-- text input -->
                                 <div class="form-group">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input class="form-control" name="name">
-                                </div>
-                                <button class="btn btn-success" type="submit">Create</button>
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        {!! Form::select('category', $categories, '',['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        {!! Form::select('brand', $brands, '',['class' => 'form-control']) !!}
+                                    </div>
+                                    <button class="btn btn-success" type="submit">Create</button>
                             </form>
                         </div>
                         <!-- /.box-body -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -43,13 +48,15 @@
 @endsection
 
 @section('scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="/assets/plugins/morris.js-0.5.1/morris.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/daterangepicker/moment.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="/assets/plugins/morris.js-0.5.1/morris.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/daterangepicker/moment.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
-<script>
+    <script>
 
-</script>
+    </script>
 @endsection
