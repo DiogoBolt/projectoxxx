@@ -22,19 +22,32 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <form action="/products/create" method="POST">
+                            <form action="/products/create" method="POST" enctype="multipart/form-data">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <!-- text input -->
-                                <div class="form-group">
                                     <div class="form-group">
                                         <label>Name</label>
                                         <input class="form-control" name="name">
                                     </div>
+                                    <label>Category</label>
                                     <div class="form-group">
                                         {!! Form::select('category', $categories, '',['class' => 'form-control']) !!}
                                     </div>
+                                    <label>Brand</label>
                                     <div class="form-group">
                                         {!! Form::select('brand', $brands, '',['class' => 'form-control']) !!}
+                                    </div>
+                                    <label>Description</label>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="description"></textarea>
+                                    </div>
+                                <label>Price</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" name="price" min="0.00" max="10000.00" step="0.01" />
+                                </div>
+                                    <div class="form-group">
+                                        <label>Image</label>
+                                        <input type="file" name="img">
                                     </div>
                                     <button class="btn btn-success" type="submit">Create</button>
                             </form>

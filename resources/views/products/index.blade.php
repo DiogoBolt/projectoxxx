@@ -31,6 +31,10 @@
                                     <thead>
                                     <tr>
                                         <th>Name</th>
+                                        <th>Category</th>
+                                        <th>Brand</th>
+                                        <th>Price</th>
+                                        <th>Img</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>
@@ -39,6 +43,10 @@
                                     @foreach($products as $product)
                                         <tr>
                                             <td>{{$product->name}}</td>
+                                            <td>{{$product->category->name}}</td>
+                                            <td>{{$product->brand->name}}</td>
+                                            <td>{{$product->price}}€</td>
+                                            <td><img src="/img/{{$product->img}}" width="50px" height="50px"></td>
                                             <td><a class="btn btn-warning" href="/products/edit/{{$product->id}}">Edit</a></td>
                                             <td><a class="btn btn-danger" href="/products/delete/{{$product->id}}" onclick="return confirm('Are you sure?')" >Delete</a></td>
                                         </tr>
