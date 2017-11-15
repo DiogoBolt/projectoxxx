@@ -68,10 +68,10 @@
             </a>
             <ul class="treeview-menu">
                 <li>
-                    <a href="/brands"><i class="fa fa-folder-open"></i>Projects</a>
+                    <a href="/products"><i class="fa fa-folder-open"></i>Products</a>
                 </li>
                 <li>
-                    <a href="/brands/new"><i class="fa fa-folder-open"></i>New Project</a>
+                    <a href="/products/new"><i class="fa fa-folder-open"></i>New Product</a>
                 </li>
             </ul>
         </li>

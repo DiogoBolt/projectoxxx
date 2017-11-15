@@ -20,7 +20,7 @@ use Box\Spout\Common\Type;
  * Class ReportCar
  * @package App\Lib\Reports
  *
- * @property Project project
+ * @property Project products
  * @property string branch
  * @property int priority
  */

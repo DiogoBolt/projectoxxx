@@ -18,13 +18,14 @@
 
                     <div class="box box-warning">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Add new Brand</h3>
+                            <h3 class="box-title">Add new Product</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <form action="/brands/create" method="POST">
+                            <form action="/products/create" method="POST">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <!-- text input -->
+                                <div class="form-group">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="form-control" name="name">
