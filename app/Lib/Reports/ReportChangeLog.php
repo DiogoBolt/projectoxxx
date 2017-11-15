@@ -21,7 +21,7 @@ use PHPExcel_Writer_Excel2007;
  * Class ReportCar
  * @package App\Lib\Reports
  *
- * @property Project project
+ * @property Project products
  * @property string branch
  * @property int priority
  */

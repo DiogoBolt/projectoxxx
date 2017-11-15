@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddImgToProducts' => $baseDir . '/database/migrations/2017_11_15_100456_addImgToProducts.php',
     'AddUsers' => $baseDir . '/database/migrations/2017_11_09_154141_addUsers.php',
     'Addfamilytoproducts' => $baseDir . '/database/migrations/2017_11_10_121941_addfamilytoproducts.php',
     'Addproducts' => $baseDir . '/database/migrations/2017_11_13_095335_addproducts.php',
