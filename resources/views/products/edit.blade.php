@@ -18,7 +18,7 @@
 
                     <div class="box box-warning">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Add new Product</h3>
+                            <h3 class="box-title">Edit {{$product->name}}</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
