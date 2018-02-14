@@ -20,10 +20,13 @@ const Schema = mongoose.Schema({
     enum : ['Blonde','Brunette', 'Asian'],
     default: 'Blonde'
   },
+  fotos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Foto' }] 
+  ,
+  
   user_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
   }
 });
 
-mongoose.model('Client', Schema);
+mongoose.model('Girl', Schema);
