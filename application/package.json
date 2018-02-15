@@ -1,10 +1,10 @@
 {
-  "name": "focus-budget-manager",
+  "name": "project-xxx",
   "version": "1.0.0",
-  "description": "A Budget Manager application",
-  "author": "Gustavo Domaradzki <gutzedomaradzki@gmail.com>",
+  "description": "A XXX application",
+  "author": "Carlos Bueno <carlos.bueno@sapo.pt>",
   "private": true,
-  "homepage": "https://github.com/gdomaradzki/focus-budget-manager",
+  "homepage": "https://github.com/DiogoBolt/projectoxxx",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
